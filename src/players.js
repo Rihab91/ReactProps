@@ -1,5 +1,5 @@
 import React from 'react'
-// parcourir un tableau des differents joueurs
+// parcourir un tableau des differents joueurs (all the elements in the array of players)
 const players = [
     {
       name: "Luka Modrić",

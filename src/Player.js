@@ -1,9 +1,10 @@
 import React from "react";
 import { Card } from "react-bootstrap"; 
-
+  // notre object props de notre component contient ces infos :name,team ...
 const Player = ({ name, team, nationality, jerseyNumber, age, imgUrl }) => {
   return (
-    //importation d card de bootstrap avec un style 
+    //importation de card apartir de bootstrap () de notre component
+
     <Card style={{ width: "35rem", margin: "10px", textAlign: "center" }} class="text-dark" border="primary">
       <Card.Img variant="top" src={imgUrl} alt={name} />
       <Card.Body>
@@ -20,5 +21,13 @@ const Player = ({ name, team, nationality, jerseyNumber, age, imgUrl }) => {
     </Card>
   );
 };
+  Player.defaultProps ={
+  name:'Player',
+  team:'Football team',
+  nationality:'Unknown',
+  jerseyNumber:'?',
+  age:'?'
+}
+
 
 export default Player
